@@ -14,7 +14,7 @@ public class ShouldFindExampleOfJUnit5Code {
         open("https://github.com");
         // ввести в поле поиска selenide и нажать Enter
         $("[data-test-selector=nav-search-input]").setValue("selenide").pressEnter();
-        //нажать на линк от первого результата поиска
+        // открыть страницу Selenide в Github
         $$("ul.repo-list li").first().$("a").click();
         // перецйти в wiki
         $("#wiki-tab").click();
